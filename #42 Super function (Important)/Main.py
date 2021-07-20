@@ -31,7 +31,7 @@ class Rectangle:
 class Square(Rectangle):
 
     def __init__(self, length, width):
-        super().__init__(length, width)
+        super().__init__(length, width)         # use the variable from the Parent(Rectangle)
     
     def area(self):
         return self.length * self.width
@@ -55,4 +55,4 @@ cube = Cube(3,3,3)
 area_cube = cube.area()
 print("The cube area is: "+str(area_cube))
 
-rec1 = Rectangle(20,15)
+
