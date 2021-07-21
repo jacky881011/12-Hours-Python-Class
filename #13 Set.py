@@ -16,6 +16,7 @@ print(utensils)
 # update dishes in utensils
 utensils.update(dishes)
 
+print("The new utensiles update to add dishes items")
 for items in utensils:
     print(items)
 

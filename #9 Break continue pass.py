@@ -30,7 +30,7 @@ for i in phone_number:
 
 
 print()
-# pass method
+# pass method 
 for i in range(1,21):
     if(i==13):                  # when i==13 then pass it 
         pass
@@ -42,4 +42,12 @@ print("End the program")
 
 
 
-
+# Print the number of each student
+number = '107360118'
+for i in range(len(number)):
+    if (i<=6):
+        pass
+    else:
+        print(number[i],end="")
+    
+        
