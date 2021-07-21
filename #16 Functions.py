@@ -10,6 +10,9 @@ def hello():
 
 hello()
 
+print()
+print()
+print()
 
 
 def say(name1,name2,age1):

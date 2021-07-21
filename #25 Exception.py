@@ -5,7 +5,7 @@ try:
     numerator = int(input("Enter a number ti divide: "))
     dividend = int(input("Enter a number to divide by: "))
     print("ans: "+str(numerator/dividend))
-except ZeroDivisionError:                               # divide zero willl show
+except ZeroDivisionError:                               # divide zero will show
     print("You cant divide by zero idiot!")
 except ValueError:                                      # if input string then wrong
     print("Enter only number please")

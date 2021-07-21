@@ -3,11 +3,14 @@
 
 
 
-def hello(**kwargs):        # kwargs 可以自己變換名稱
+def hello(**tuple1):        # kwargs 可以自己變換名稱
+    print(tuple1.get('first'))
+    print(tuple1.values())
+    print(tuple1.keys())
 
-    print("Hello",end=" ")
-    for key,value in kwargs.items():
-        print(value,end=" ")
+    for keys,values in tuple1.items():
+        print(keys)
+        print(values)
 
 
 

@@ -9,6 +9,9 @@ for items in food:
     print(items+" ",end="")
 
 
+
+
+
 print()
 food[3] = 'pudding'     # change the items
 print(food)
@@ -38,3 +41,6 @@ print(food)
 # clear
 food.clear()
 print(food)             # remove the all things from list
+
+
+

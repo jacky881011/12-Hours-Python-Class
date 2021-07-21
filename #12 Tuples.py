@@ -2,8 +2,9 @@
 #         used to group together related data
 # ( ): tuple
 
-student = ('Bro', 21, 'male')
+student = ('Bro', 21, 'male','Bro')
 
+print(student)
 
 print(student.count('Bro'))     # show the count on 'Bro' times 
 
