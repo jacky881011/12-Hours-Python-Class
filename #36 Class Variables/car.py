@@ -1,6 +1,6 @@
+
 class Car:
     wheels = 4  # class variable
-
 
     def __init__(self,make,model,year,color):
         self.make = make        # instance variable
@@ -10,6 +10,7 @@ class Car:
 
     def Driving(self):
         print("The car "+self.model+" is driving")
+        
         
 
 

@@ -1,7 +1,5 @@
 # multiple inheritance = when a child class is derived from more than one parent class
 
-from typing_extensions import ParamSpec
-
 
 class Prey:
     def Flee(self):
@@ -29,8 +27,6 @@ class Rabbit(Prey,Predator):
 fish = Fish()
 hawk = Hawk()
 rabbit = Rabbit()
-
-
 
 rabbit.Flee()
 hawk.Flee()
