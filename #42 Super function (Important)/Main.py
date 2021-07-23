@@ -56,3 +56,35 @@ area_cube = cube.area()
 print("The cube area is: "+str(area_cube))
 
 
+
+
+
+
+
+
+
+#----------------------------------------------------------test------------------------------------------------------------------
+class Rectangle2(Rectangle):
+    def __init__(self, length, width):
+        super().__init__(length, width)
+    
+    def find_area(self):
+        return self.length * self.width
+
+class Rectangle3(Rectangle2):
+    def __init__(self, length, width ,height):
+        super().__init__(length, width)
+        self.height = height
+    
+    def find_area(self):
+        return self.length * self.width * self.height
+
+
+rec = Rectangle2(4, 5  )
+rec2 = Rectangle3(4 ,5 ,6)
+
+area2 = rec2.find_area()
+area = rec.find_area()
+
+print(area2)
+print(area)

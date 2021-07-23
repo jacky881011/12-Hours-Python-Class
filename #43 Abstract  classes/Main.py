@@ -57,7 +57,6 @@ class Motor2(Vehicle2):
         print("The motor is stopped")
 
 
-
 car2 = Car2()
 motor2 = Motor2()
 

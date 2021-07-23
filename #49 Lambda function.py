@@ -27,3 +27,11 @@ print(add(3,4,5))
 print(full_name('Ming Yun','Hsu'))
 age_check(20)
 age_check(10)
+
+
+function1 = lambda : print("Hello world")
+function1()
+
+
+add2= lambda x,y : print(x+y)
+add2(9999999999,1)

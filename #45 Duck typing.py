@@ -18,18 +18,29 @@ class Chicken:
         print("The chicken is clucking")
 
     
-class Person():
+class Person:
 
-    def catch(self,animal):
+    def catch(self,animal,name):
         animal.walk()
         animal.talk()
-        print("Ypu get a duck")
+        print("You get a "+ name)
+        
 
 
 duck = Duck()
 chicken = Chicken()
 person = Person()
 
-person.catch(duck)
-person.catch(chicken)
+person.catch(duck,'duck')
+person.catch(chicken,'chicken')
     
+
+sum = 0
+a = [1,1]
+b=[]
+
+for i in range(10):
+    sum = a[i]+a[i+1]
+    a.append(sum)
+
+print(a)
