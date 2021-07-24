@@ -24,9 +24,9 @@ print()
 print()
 students = ("Squidward","Sandy","Patrick","Spongebob","Mr.Krabs")           # tuple (cant use sort function )
 
-sorted_student = sorted(students)                             # sorted(students,reverse= True) 顛倒顯示
+students = sorted(students)                             # sorted(students,reverse= True) 顛倒顯示
 
-for i in sorted_student:
+for i in students:
     print(i)
 
 
@@ -56,7 +56,24 @@ students = (('Jacky','F',60),
             ('Kevin','D',70))
 
 score = lambda scores : scores[1]
-sorted_students = sorted(students,key = score, reverse= True)
+sorted_students = sorted(students,key = score)
 
 for i in sorted_students:
     print(i)
+
+
+
+dic1 = [('Jacky','107360118','A'),
+        ('Melody','107381023','A'),
+        ('Kevein','107360129','F'),
+        ('Patrick','107371022','B'),
+        ('Lisa','107367821','D'),
+        ('Lpoee','107389011','C')]
+
+sub_dic1 = lambda dic1 : dic1[2]
+dic1.sort(key= sub_dic1)
+
+for i in dic1:
+    print(i)
+
+
