@@ -30,3 +30,29 @@ def dividend(number):
 
 print_value(64)
 print_value(33)
+
+
+
+menu = []
+def add_menu(food):
+    new_menu  = add_food(food)
+    show_menu(new_menu)
+
+
+
+def add_food(food):
+    menu.append(food)
+    return menu
+
+def show_menu(update_menu):
+    print("This is the new menus item!")
+    for items in update_menu:
+         print(items)
+
+
+new_foods = ['cola','ice cream','juice','wine']
+add_menu(new_foods)
+print(len(menu))
+new_foods2 = ['cola','ice cream','juice','wine']
+add_menu(new_foods2)
+
