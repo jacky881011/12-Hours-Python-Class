@@ -1,16 +1,14 @@
 class Animal:
 
     alive = True
-    #def __init__(self,name,size):
-     #   self.name = name
+    #def __init__(self,name):
+       # self.name = name
       #  self.size = size
+    def Eat(self,name):
+        print('This '+name+ ' is eatting.')
 
-    
-    def Eat(self):
-        print('This animal is eatting.')
-
-    def Sleep(self):
-        print('This animal is sleeping')
+    def Sleep(self,name):
+        print('This '+ name +'  is sleeping')
 
 
 # Child
@@ -28,7 +26,6 @@ class Hawk(Animal):                   # class Child( Parent )
     def Jump(self):
         print("This hawk is jumpping")
 
-
 rabbit= Rabbit()
 fish = Fish()
 hawk = Hawk()
@@ -41,5 +38,8 @@ rabbit.Run()
 fish.Swim()
 hawk.Jump()
 
+rabbit.Eat('rabbit')
+fish.Eat('fish')
+hawk.Eat('hawk')
 
 

@@ -24,8 +24,6 @@ class Car:
 car1 = Car()
 #car1.turn_on()   # not add return self 
 #car1.drive()     # not add retrun self 
-
-
 # 可以不斷地進行疊加處理方法 multiple methods sequentially
 car1.turn_on().drive()
 car1.turn_on().drive().brake().turn_off()

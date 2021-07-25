@@ -14,7 +14,13 @@ def quiet(text):
 def hello(func):                    # outside function have higher order functions
     text = func("Hello")
 
-    print(text)
+    if( text == text.upper()):
+        print("You use loud function")
+        print(text)
+    elif(text == text.lower()):
+        print("You use quiet function")
+        print(text)
+
 
 
 hello(loud)
@@ -27,7 +33,7 @@ def dvisor(x):
         div = y/x
         return div
 
-    return dividend
+    return dividend         # 這裡回傳 dividend就是回傳 div的結果
 
 divide = dvisor(2)
 print(divide(10))           # 所以說 dividend有最高得優先權

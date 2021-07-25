@@ -4,7 +4,7 @@
 class Organism:
     alive = True
 
-    def Show():
+    def Show(self):
         print("All the animals are animals.")
 
 
